@@ -41,6 +41,23 @@ public class Team {
         return TeamStatus.safe;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Team team = (Team) o;
+
+        if (!name.equals(team.name)) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        return name.hashCode();
+    }
+
     public void setPoints(int i) {
         points += i;
     }

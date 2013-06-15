@@ -7,6 +7,9 @@ import org.junit.Test;
 import java.util.Arrays;
 
 import static junit.framework.Assert.assertEquals;
+import static junit.framework.Assert.assertNotSame;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class TeamTest {
     @Test
@@ -78,6 +81,18 @@ public class TeamTest {
         assertEquals("Team Safe Determination", TeamStatus.safe, sunderland.teamStatus(l));
     }
 
+    @Test
+    public void valueObject(){
+        Team a1 = new Team("Sunderland", 0, 0);
+        Team a2 = new Team("Sunderland", 0, 0);
+        Team b = new Team("QPR", 0, 0);
+
+        assertTrue("Are Equal", a1.equals(a2));
+        assertFalse("Aren't Equal", a1.equals(b));
+        assertFalse("Not Equal to Null", a1.equals(null));
+        assertEquals("Hashcode Equal", a1.hashCode(), a2.hashCode());
+        assertNotSame("Hashcode not Equal", a1.hashCode(), b.hashCode());
+    }
 
     private Team createTeam(String name, int points, int goalDifference) {
         return new Team(name, points, goalDifference);

@@ -61,7 +61,7 @@
       <file leaf-file-name="TeamTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/TeamTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="0" selection-start="2643" selection-end="2643" vertical-scroll-proportion="0.0">
+            <state line="97" column="52" selection-start="3397" selection-end="3397" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -70,7 +70,7 @@
       <file leaf-file-name="RoundTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/RoundTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="6" selection-start="1483" selection-end="1483" vertical-scroll-proportion="0.0">
+            <state line="48" column="10" selection-start="1288" selection-end="1288" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,10 +78,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Round.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="League.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/domain/League.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="12" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Premiership.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/domain/Premiership.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="21" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PremiershipTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/PremiershipTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="51" selection-start="306" selection-end="306" vertical-scroll-proportion="0.26728112">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#297#303#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Round.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/domain/Round.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="20" selection-start="470" selection-end="470" vertical-scroll-proportion="0.55950266">
+            <state line="1" column="5" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -101,7 +131,7 @@
       <file leaf-file-name="Team.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/domain/Team.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="16" selection-start="951" selection-end="951" vertical-scroll-proportion="0.0">
+            <state line="48" column="45" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -119,11 +149,13 @@
       <list>
         <option value="$PROJECT_DIR$/src/domain/TeamStatus.java" />
         <option value="$PROJECT_DIR$/src/test/FakeLeague.java" />
-        <option value="$PROJECT_DIR$/src/domain/League.java" />
-        <option value="$PROJECT_DIR$/src/test/TeamTest.java" />
         <option value="$PROJECT_DIR$/src/domain/Round.java" />
         <option value="$PROJECT_DIR$/src/test/RoundTest.java" />
+        <option value="$PROJECT_DIR$/src/domain/League.java" />
+        <option value="$PROJECT_DIR$/src/domain/Premiership.java" />
+        <option value="$PROJECT_DIR$/src/test/TeamTest.java" />
         <option value="$PROJECT_DIR$/src/domain/Team.java" />
+        <option value="$PROJECT_DIR$/src/test/PremiershipTest.java" />
       </list>
     </option>
   </component>
@@ -239,7 +271,7 @@
       <recent name="domain" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RoundTest">
+  <component name="RunManager" selected="JUnit.PremiershipTest">
     <configuration default="false" name="TeamTest" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="ArithmeticSafety" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -274,6 +306,28 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.RoundTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="PremiershipTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="ArithmeticSafety" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.PremiershipTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -407,9 +461,10 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="JUnit.TeamTest" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.RoundTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.PremiershipTest" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -455,13 +510,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32881355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3281027" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24918832" sideWeight="0.5378031" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46219686" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24918832" sideWeight="0.45084745" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.54915255" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952926" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -544,40 +599,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/League.java">
+    <entry file="file://$PROJECT_DIR$/src/domain/Round.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="43" selection-start="110" selection-end="110" vertical-scroll-proportion="0.11127596">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/TeamTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="0" selection-start="2643" selection-end="2643" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/Team.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="16" selection-start="951" selection-end="951" vertical-scroll-proportion="0.0">
+        <state line="1" column="5" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/RoundTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="6" selection-start="1483" selection-end="1483" vertical-scroll-proportion="0.0">
+        <state line="48" column="10" selection-start="1288" selection-end="1288" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/Round.java">
+    <entry file="file://$PROJECT_DIR$/src/domain/League.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="20" selection-start="470" selection-end="470" vertical-scroll-proportion="0.55950266">
+        <state line="7" column="12" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/Premiership.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="21" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/TeamTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="52" selection-start="3397" selection-end="3397" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/Team.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="45" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/PremiershipTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="51" selection-start="306" selection-end="306" vertical-scroll-proportion="0.26728112">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#297#303#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
