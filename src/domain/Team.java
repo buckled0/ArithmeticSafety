@@ -40,4 +40,8 @@ public class Team {
 
         return TeamStatus.safe;
     }
+
+    public void setPoints(int i) {
+        points += i;
+    }
 }

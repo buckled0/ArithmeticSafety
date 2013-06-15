@@ -78,6 +78,7 @@ public class TeamTest {
         assertEquals("Team Safe Determination", TeamStatus.safe, sunderland.teamStatus(l));
     }
 
+
     private Team createTeam(String name, int points, int goalDifference) {
         return new Team(name, points, goalDifference);
     }
