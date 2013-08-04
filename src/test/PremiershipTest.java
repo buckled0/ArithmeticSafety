@@ -22,6 +22,6 @@ public class PremiershipTest {
     public void oneRoundPlayedAllTeamsDraw(){
         Premiership p = new Premiership(buildTeams());
 
-        assertArrayEquals("All teams in same position", buildTeams().toArray() , p.teams().toArray());
+        assertArrayEquals("All teams in same position", buildTeams().toArray(), p.teams().toArray());
     }
 }
