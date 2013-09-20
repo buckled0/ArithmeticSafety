@@ -11,56 +11,60 @@ import static org.junit.Assert.*;
 import static ui.test.TestHelpers.assertInstanceOf;
 
 public class LeagueWindowTest {
-    private LeagueWindow lt;
+    private LeagueWindow lw;
 
     @Before
     public void setUp() throws Exception {
-        lt = new LeagueWindow();
+        lw = new LeagueWindow();
     }
 
     @Test
     public void isAJFrame(){
-        assertInstanceOf(lt, JFrame.class);
+        assertInstanceOf(lw, JFrame.class);
     }
     
     @Test
     public void shouldHaveATitle(){
-        assertEquals(LeagueWindow.TITLE, lt.getTitle());
+        assertEquals(LeagueWindow.TITLE, lw.getTitle());
     }
 
     @Test
     public void shouldTheWindowBeVisible(){
-        assertTrue("Is Visible", lt.isVisible());
+        assertTrue("Is Visible", lw.isVisible());
     }
 
     @Test
     public void shouldBeCorrectSize(){
-        assertFalse(lt.isResizable());
-        assertEquals("league table size", lt.INITIAL_SIZE, lt.getSize());
+        assertFalse(lw.isResizable());
+        assertEquals("league table size", lw.INITIAL_SIZE, lw.getSize());
     }
 
     @Test
     public void shouldBeInCorrectPosition(){
-        assertEquals("league table position", new Point(150, 22), lt.getLocation());
+        assertEquals("league table position", new Point(150, 22), lw.getLocation());
     }
 
     @Test
     public void shouldExitOnClose(){
-        assertEquals("close operation", WindowConstants.EXIT_ON_CLOSE, lt.getDefaultCloseOperation());
+        assertEquals("close operation", WindowConstants.EXIT_ON_CLOSE, lw.getDefaultCloseOperation());
     }
 
     @Test
     public void borderLayout(){
-        assertInstanceOf(lt.getContentPane().getLayout(), BorderLayout.class);
+        assertInstanceOf(lw.getContentPane().getLayout(), BorderLayout.class);
     }
-
     @Test
     public void shouldATableAppear(){
-        assertInstanceOf(lt.getContentPane().getComponents()[0], JTable.class);
+        assertInstanceOf(lw.getContentPane().getComponents()[0], JTable.class);
     }
 
     @Test
     public void shouldHaveAJPanel(){
-        assertInstanceOf(lt.getContentPane().getComponents()[1], JPanel.class);
+        assertInstanceOf(lw.getContentPane().getComponents()[1], JPanel.class);
+    }
+
+    @Test
+    public void shouldHaveANorthJPanel(){
+        assertInstanceOf(lw.getContentPane().getComponents()[2], JPanel.class);
     }
 }

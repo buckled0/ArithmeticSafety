@@ -4,9 +4,10 @@ import javax.swing.*;
 import java.awt.*;
 
 public class LeagueWindow extends JFrame {
-    public static final String TITLE = "The League";
-    public static final Dimension INITIAL_SIZE = new Dimension(1000, 711);
+    public static final String TITLE = "Arithmetic Football";
+    public static final Dimension INITIAL_SIZE = new Dimension(850, 561);
     public static final Point INITIAL_LOCATION = new Point(150, 22);
+    private static Component table;
 
     public LeagueWindow(){
         setTitle(TITLE);
@@ -14,9 +15,12 @@ public class LeagueWindow extends JFrame {
         setResizable(false);
         setLocation(INITIAL_LOCATION);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        setVisible(true);
 
-        getContentPane().add(BorderLayout.CENTER, new JTable());
-        getContentPane().add(BorderLayout.SOUTH, new JPanel());
+        getContentPane().add(BorderLayout.CENTER, new LeagueTable());
+        getContentPane().add(BorderLayout.SOUTH, new BottomPanel());
+        getContentPane().add(BorderLayout.NORTH, new TopPanel());
+
+        setVisible(true);
     }
+
 }
