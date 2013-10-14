@@ -22,5 +22,4 @@ public class LeagueWindow extends JFrame {
 
         setVisible(true);
     }
-
 }

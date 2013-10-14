@@ -3,26 +3,26 @@ package domain;
 import java.util.List;
 
 public class Team {
-    private String name;
-    private int points;
-    private int goalDifference;
+    public String name;
+    public int goalDifference;
+    public int points;
 
-    public Team(String name, int points, int goalDifference) {
+    public Team(String name, int goalDifference, int points) {
         this.name = name;
-        this.points = points;
         this.goalDifference = goalDifference;
+        this.points = points;
     }
 
     public String getName() {
         return name;
     }
 
-    public int getPoints() {
-        return points;
-    }
-
     public int getGoalDifference() {
         return goalDifference;
+    }
+
+    public int getPoints() {
+        return points;
     }
 
     public TeamStatus teamStatus(League league) {

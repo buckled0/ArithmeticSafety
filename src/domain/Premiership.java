@@ -7,7 +7,6 @@ public class Premiership {
     private List<Team> teams;
 
     public Premiership(List<Team> teams) {
-
         this.teams = teams;
     }
 
