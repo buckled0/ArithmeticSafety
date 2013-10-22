@@ -6,11 +6,13 @@ public class Team {
     public String name;
     public int goalDifference;
     public int points;
+    public int gamesPlayed;
 
-    public Team(String name, int goalDifference, int points) {
+    public Team(String name, int goalDifference, int points, int gamesPlayed) {
         this.name = name;
         this.goalDifference = goalDifference;
         this.points = points;
+        this.gamesPlayed = gamesPlayed;
     }
 
     public String getName() {
@@ -23,6 +25,10 @@ public class Team {
 
     public int getPoints() {
         return points;
+    }
+
+    public int getGamesPlayed(){
+        return gamesPlayed;
     }
 
     public TeamStatus teamStatus(League league) {
@@ -61,4 +67,5 @@ public class Team {
     public void setPoints(int i) {
         points += i;
     }
+
 }

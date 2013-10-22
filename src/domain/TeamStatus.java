@@ -1,6 +1,6 @@
 package domain;
 
 public enum TeamStatus {
-    notSafe, equal, safe
+    notSafe, equal, safe, relegated
 
 }

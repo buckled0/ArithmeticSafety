@@ -10,15 +10,15 @@ public class RoundTest {
 
     @Test
     public void creatingAConceptOfARound(){
-        Team team1 = new Team("t1", 0, 0);
-        Team team2 = new Team("t2", 0, 0);
+        Team team1 = new Team("t1", 0, 0, 8);
+        Team team2 = new Team("t2", 0, 0, 8);
         Round r = new Round(team1, team2);
     }
 
     @Test
     public void teamsDrawShouldGetOnePointEach(){
-        Team team1 = new Team("t1", 0, 0);
-        Team team2 = new Team("t2", 0, 0);
+        Team team1 = new Team("t1", 0, 0, 8);
+        Team team2 = new Team("t2", 0, 0, 8);
         Round r = new Round(team1, team2);
 
         r.play(0, 0);
@@ -30,8 +30,8 @@ public class RoundTest {
 
     @Test
     public void oneTeamWinsAndOneTeamLoses(){
-        Team team1 = new Team("t1", 0, 0);
-        Team team2 = new Team("t2", 0, 0);
+        Team team1 = new Team("t1", 0, 0, 8);
+        Team team2 = new Team("t2", 0, 0, 8);
         Round r = new Round(team1, team2);
 
         r.play(1, 0);
@@ -42,8 +42,8 @@ public class RoundTest {
 
     @Test
     public void roundOneDrawRoundTwoWin(){
-        Team team1 = new Team("t1", 0, 0);
-        Team team2 = new Team("t2", 0, 0);
+        Team team1 = new Team("t1", 0, 0, 8);
+        Team team2 = new Team("t2", 0, 0, 8);
         Round r = new Round(team1, team2);
 
         r.play(0, 0).play(1, 0);
