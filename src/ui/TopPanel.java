@@ -14,12 +14,8 @@ public class TopPanel extends JPanel{
     public String selectedValue;
 
     public TopPanel() {
-<<<<<<< HEAD
-        leagues = new String[] {"Please Select a LeagueVerdict", "Premier LeagueVerdict", "La Liga", "Serie A", "Bundesliga",
+        leagues = new String[] {"Please Select a League", "Premier LeagueVerdict", "La Liga", "Serie A", "Bundesliga",
                                   "Ligue 1", "Eredivisie"};
-=======
-        leagues = new String[] {"Please Select a League", "Premier League"};
->>>>>>> a86130f9a685fd78cc6b1e8bfe559ff7c2745746
         leagueMenu = new JComboBox(leagues);
 
         goButton = new JButton();

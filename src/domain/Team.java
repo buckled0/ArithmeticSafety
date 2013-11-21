@@ -29,13 +29,6 @@ public class Team {
     public int getGamesPlayed(){
         return gamesPlayed;
     }
-<<<<<<< HEAD
-=======
-
-    public TeamStatus teamStatus(League league) {
-        List<Team> teams = league.teamsBelowMe(this);
-        Team team = teams.get(0);
->>>>>>> a86130f9a685fd78cc6b1e8bfe559ff7c2745746
 
     public TeamStatus leagueStatus(Team team1, Team team2){
 
@@ -58,16 +51,9 @@ public class Team {
     }
 
 
-<<<<<<< HEAD
     /*public String toString(){
         StringBuilder result = new StringBuilder();
         result.append(this.verdictArray).append(",");
         return result.toString();
     } */
-=======
-    public void setPoints(int i) {
-        points += i;
-    }
-
->>>>>>> a86130f9a685fd78cc6b1e8bfe559ff7c2745746
 }
