@@ -1,16 +1,17 @@
 package domain;
 
-import java.util.List;
-
 public class Team {
+
     public String name;
     public int goalDifference;
     public int points;
+    public int gamesPlayed;
 
-    public Team(String name, int goalDifference, int points) {
+    public Team(String name, int goalDifference, int points, int gamesPlayed) {
         this.name = name;
         this.goalDifference = goalDifference;
         this.points = points;
+        this.gamesPlayed = gamesPlayed;
     }
 
     public String getName() {
@@ -25,40 +26,34 @@ public class Team {
         return points;
     }
 
-    public TeamStatus teamStatus(League league) {
-        List<Team> teams = league.teamsBelowMe(this);
-        Team team = teams.get(0);
-
-        if(points == team.points)
-            return TeamStatus.equal;
-
-        if(teams.size() > 1)
-            return TeamStatus.safe;
-
-        if(points - team.points < 4)
-            return TeamStatus.notSafe;
-
-        return TeamStatus.safe;
+    public int getGamesPlayed(){
+        return gamesPlayed;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+    public TeamStatus leagueStatus(Team team1, Team team2){
 
-        Team team = (Team) o;
+        if ((team1.getPoints() == team2.getPoints()) && (team1.getGoalDifference() == team2.getGoalDifference()))
+            return TeamStatus.equalOnEverything;
 
-        if (!name.equals(team.name)) return false;
+        if ((team1.getPoints() == team2.getPoints()) && (team1.getGoalDifference() > team2.getGoalDifference()))
+            return TeamStatus.equalButTop;
 
-        return true;
+        if (team1.getPoints() - team2.points <= 2)
+            return TeamStatus.atRisk;
+
+        if (team1.getPoints() - team2.getPoints() == 3)
+            return TeamStatus.fairlySafeForNow;
+
+        if (team1.getPoints() - team2.getPoints() >= 4)
+            return TeamStatus.definitelySafeForNow;
+
+        return TeamStatus.relegated;
     }
 
-    @Override
-    public int hashCode() {
-        return name.hashCode();
-    }
 
-    public void setPoints(int i) {
-        points += i;
-    }
+    /*public String toString(){
+        StringBuilder result = new StringBuilder();
+        result.append(this.verdictArray).append(",");
+        return result.toString();
+    } */
 }

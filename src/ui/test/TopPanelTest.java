@@ -27,7 +27,7 @@ public class TopPanelTest {
 
     @Test
     public void shouldHaveAFullyFilledArray(){
-        String[] expectedArray = {"Please Select a League", "Premier League", "La Liga", "Serie A", "Bundesliga",
+        String[] expectedArray = {"Please Select a LeagueVerdict", "Premier LeagueVerdict", "La Liga", "Serie A", "Bundesliga",
                                         "Ligue 1", "Eredivisie"};
         String[] resultsArray = topPanel.getStringArray();
         assertTrue(Arrays.equals(expectedArray, resultsArray));
@@ -39,15 +39,6 @@ public class TopPanelTest {
         assertEquals("Should have a combobox", topPanel.getComponents()[index].getClass(), JComboBox.class);
     }
 
-    @Test
-    public void shouldHaveARoundsArray(){
-        Integer[] expected = new Integer[39];
-        for(int i = 1; i < expected.length; i++) {
-            expected[i] = i;
-        }
-        Integer[] actual = topPanel.getIntArray();
-        assertTrue(Arrays.equals(expected, actual));
-    }
 
     @Test
     public void shouldHaveARoundsComboBox(){

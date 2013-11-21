@@ -1,19 +1,20 @@
-package databaseConnection;
+package database;
 
 import domain.Team;
 
 import java.sql.*;
 import java.util.ArrayList;
 
-
 public class LeagueSQLConnector {
 
-    String url = "jdbc:mysql://localhost:3306/test";
-    String driver = "com.mysql.jdbc.Driver";
-    String userName = "daniel";
-    String password = "JBaxter2011";
+    private String url = "jdbc:mysql://localhost:3306/test";
+    private String driver = "com.mysql.jdbc.Driver";
+    private String userName = "daniel";
+    private String password = "JBaxter2011";
+    private Connection connection = null;
+    private Statement st = null;
+    private ResultSet res = null;
     public ArrayList<Team> teamList = new ArrayList<Team>();
-    public ArrayList<Integer> pointsList = new ArrayList<Integer>();
 
     public LeagueSQLConnector(){
 
@@ -32,22 +33,16 @@ public class LeagueSQLConnector {
         }
 
         System.out.println("Established a connection");
-        Connection connection = null;
-
-
 
         try {
 
             connection = DriverManager.getConnection(url, userName, password);
-            Statement st = connection.createStatement();
-            ResultSet res = st.executeQuery("select * from `test`.`Premier_League`" +
+            st = connection.createStatement();
+            res = st.executeQuery("select * from `test`.`Premier_League`" +
                     "ORDER BY Points DESC, Goal_Difference DESC;");
-
-
             while(res.next()){
                 teamList.add(new Team(res.getString("Team_Name"), res.getInt("Goal_Difference"),
-                        res.getInt("Points")));
-                pointsList.add(new Integer(res.getInt("Points")));
+                        res.getInt("Points"), res.getInt("Games_Played")));
             }
 
         } catch (SQLException e) {
@@ -56,18 +51,16 @@ public class LeagueSQLConnector {
 
             e.printStackTrace();
 
-            return;
-
+        } finally {
+            try { res.close(); } catch (SQLException e) {   }
+            try { st.close(); } catch (SQLException e) {   }
+            try { connection.close(); } catch (SQLException e) {   }
         }
 
     }
 
     public ArrayList<Team> getTeamList(){
         return teamList;
-    }
-
-    public ArrayList<Integer> getPointsList(){
-        return pointsList;
     }
 
 }

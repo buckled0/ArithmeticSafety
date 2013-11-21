@@ -5,9 +5,8 @@ import java.awt.*;
 
 public class LeagueWindow extends JFrame {
     public static final String TITLE = "Arithmetic Football";
-    public static final Dimension INITIAL_SIZE = new Dimension(850, 561);
+    public static final Dimension INITIAL_SIZE = new Dimension(850, 450);
     public static final Point INITIAL_LOCATION = new Point(150, 22);
-    private static Component table;
 
     public LeagueWindow(){
         setTitle(TITLE);
