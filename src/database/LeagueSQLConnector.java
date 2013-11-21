@@ -41,6 +41,7 @@ public class LeagueSQLConnector {
             res = st.executeQuery("select * from `test`.`Premier_League`" +
                     "ORDER BY Points DESC, Goal_Difference DESC;");
             while(res.next()){
+                pointsList.add(res.getInt("Points"));
                 teamList.add(new Team(res.getString("Team_Name"), res.getInt("Goal_Difference"),
                         res.getInt("Points"), res.getInt("Games_Played")));
             }
