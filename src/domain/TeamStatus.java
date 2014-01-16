@@ -1,6 +1,7 @@
 package domain;
 
 public enum TeamStatus {
-    atRisk, atHighRisk, fairlySafeForNow, definitelySafeForNow, equalButTop, equalOnEverything, champion,
-    chanceOfChampionsLeague, chanceOfEuropaLeague, champions, relegated;
+    atRisk, fairlySafeForNow, definitelySafeForNow, equalButTop, equalOnEverything, chanceOfChampion,
+    chanceOfChampionsLeague, chanceOfEuropaLeague, champions, couldBeRelegated, highChanceOfRelegation, definitelyRelegated,
+    drawingForTitle, championsLeague, europaLeague, finalPlace;
 }

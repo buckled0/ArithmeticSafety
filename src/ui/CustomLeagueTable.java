@@ -9,21 +9,23 @@ import javax.swing.table.TableColumn;
 import java.awt.*;
 import java.util.ArrayList;
 
-public class LeagueTable extends JTable {
+public class CustomLeagueTable extends JTable {
 
-    public static final Dimension INITIAL_SIZE = new Dimension(800, 340);
+    public static final Dimension INITIAL_SIZE = new Dimension(800, 450 );
     DefaultTableModel model;
     JTable table;
+    ArrayList<Team> teamList = new ArrayList<Team>();
 
-    public LeagueTable(){
+    public CustomLeagueTable(){
 
         model = new DefaultTableModel();
-        model.setColumnIdentifiers(new String[]{"Team Name", "Points", "Goal Diff", "Played", "League Verdict"});
         table = new JTable(model){
             @Override
             public boolean isCellEditable(int row, int column) {
-                return false;
-        }};
+                return true;
+            }};
+        model.setColumnIdentifiers(new String[]{"Team Name", "Points", "Goal Diff", "Played", "League Verdict"});
+        model.setRowCount(20);
 
         JScrollPane pane = new JScrollPane(table, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,
                 JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
@@ -38,6 +40,19 @@ public class LeagueTable extends JTable {
         colVerdict.setPreferredWidth(290);
 
         add(pane);
+    }
+
+    public void getValuesInTable() {
+        int rowNum = table.getRowCount();
+
+        for(int i = 0; i < rowNum; i++) {
+            String teamName = (String) table.getValueAt(i, 1);
+            int teamPoints = Integer.parseInt((String) table.getValueAt(i, 2));
+            int teamGD = Integer.parseInt((String) table.getValueAt(i, 3));
+            int gamesPlayed = Integer.parseInt((String) table.getValueAt(i, 4));
+
+            teamList.add(new Team(teamName, teamPoints, teamGD, gamesPlayed));
+        }
     }
 
     public void populateTable(ArrayList<Team> teamList, ArrayList<TeamStatus> verdictArray) {
@@ -93,5 +108,7 @@ public class LeagueTable extends JTable {
     public void populateRelegationCell(int bottomDifference){
         model.setValueAt("Team needs " + bottomDifference + " to overtake the team above", 19, 4);
     }
+
+    public ArrayList<Team> getTeamList() { return teamList; }
 
 }

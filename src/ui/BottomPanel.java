@@ -6,13 +6,9 @@ import java.awt.event.ActionListener;
 
 public class BottomPanel extends JPanel {
 
-    public final JButton bettingButton;
     public final JButton quitButton;
 
     public BottomPanel() {
-
-        bettingButton = new JButton();
-        bettingButton.setText("Betting");
 
         quitButton = new JButton();
         quitButton.setText("Quit");
@@ -23,7 +19,6 @@ public class BottomPanel extends JPanel {
             }
         });
 
-        add(bettingButton);
         add(quitButton);
     }
 

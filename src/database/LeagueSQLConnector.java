@@ -7,6 +7,7 @@ import java.util.ArrayList;
 
 public class LeagueSQLConnector {
 
+    private String tableName;
     private String url = "jdbc:mysql://localhost:3306/test";
     private String driver = "com.mysql.jdbc.Driver";
     private String userName = "daniel";
@@ -16,7 +17,9 @@ public class LeagueSQLConnector {
     private ResultSet res = null;
     public ArrayList<Team> teamList = new ArrayList<Team>();
 
-    public LeagueSQLConnector(){
+    public LeagueSQLConnector(String tableName){
+
+        this.tableName = tableName;
 
         try {
 
@@ -32,13 +35,13 @@ public class LeagueSQLConnector {
 
         }
 
-        System.out.println("Established a connection");
+        System.out.println("Established a connection with " + tableName + " table");
 
         try {
 
             connection = DriverManager.getConnection(url, userName, password);
             st = connection.createStatement();
-            res = st.executeQuery("select * from `test`.`Premier_League`" +
+            res = st.executeQuery("select * from " + tableName +
                     "ORDER BY Points DESC, Goal_Difference DESC;");
             while(res.next()){
                 teamList.add(new Team(res.getString("Team_Name"), res.getInt("Goal_Difference"),

@@ -5,10 +5,8 @@ import org.junit.Test;
 import ui.TopPanel;
 
 import javax.swing.*;
-import java.util.Arrays;
 
 import static junit.framework.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 import static ui.test.TestHelpers.assertInstanceOf;
 
 public class TopPanelTest {
@@ -23,14 +21,6 @@ public class TopPanelTest {
     @Test
     public void beAJPanel(){
         assertInstanceOf(new TopPanel(), JPanel.class);
-    }
-
-    @Test
-    public void shouldHaveAFullyFilledArray(){
-        String[] expectedArray = {"Please Select a LeagueVerdict", "Premier LeagueVerdict", "La Liga", "Serie A", "Bundesliga",
-                                        "Ligue 1", "Eredivisie"};
-        String[] resultsArray = topPanel.getStringArray();
-        assertTrue(Arrays.equals(expectedArray, resultsArray));
     }
 
     @Test

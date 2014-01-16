@@ -47,13 +47,7 @@ public class Team {
         if (team1.getPoints() - team2.getPoints() >= 4)
             return TeamStatus.definitelySafeForNow;
 
-        return TeamStatus.relegated;
+        return TeamStatus.couldBeRelegated;
     }
 
-
-    /*public String toString(){
-        StringBuilder result = new StringBuilder();
-        result.append(this.verdictArray).append(",");
-        return result.toString();
-    } */
 }
