@@ -35,6 +35,8 @@ public class LeagueVerdict {
 
         if(checkGamesPlayed >= 30)
             endOfSeasonPlacement(teamList);
+        else if(checkGamesPlayed == 0)
+            startOfSeason();
         else {
             for(int i = 0; i < teamList.size() - 1; i++){
                 Team team1 = teamList.get(i);
@@ -45,6 +47,11 @@ public class LeagueVerdict {
             verdictArray.add(19, TeamStatus.couldBeRelegated);
         }
 
+    }
+
+    private void startOfSeason() {
+        for(int i = 0; i < 20; i++)
+            verdictArray.add(i, TeamStatus.startOfSeason);
     }
 
     public void endOfSeasonPlacement(ArrayList<Team> teamList) {
@@ -88,11 +95,15 @@ public class LeagueVerdict {
         }
         verdictArray.add(4, TeamStatus.chanceOfEuropaLeague);
 
-        for(int i = 5; i < 17; i++){
-            Team team1 = teamList.get(i);
-            Team team2 = teamList.get(i + 1);
-            TeamStatus teamStatus = team1.leagueStatus(team1, team2);
-            verdictArray.add(i, teamStatus);
+        if(teamList.get(4).getPoints() == teamList.get(5).getPoints())
+            verdictArray.add(5, TeamStatus.chanceOfEuropaLeague);
+        else {
+            for(int i = 5; i < 17; i++){
+                Team team1 = teamList.get(i);
+                Team team2 = teamList.get(i + 1);
+                TeamStatus teamStatus = team1.leagueStatus(team1, team2);
+                verdictArray.add(i, teamStatus);
+            }
         }
 
         for(int i = 17; i < 20; i++)

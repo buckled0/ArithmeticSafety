@@ -2,7 +2,7 @@ package ui.test;
 
 import org.junit.Before;
 import org.junit.Test;
-import ui.LeagueWindow;
+import ui.main_ui.LeagueWindow;
 
 import javax.swing.*;
 import java.awt.*;

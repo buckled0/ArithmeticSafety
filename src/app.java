@@ -1,4 +1,4 @@
-import ui.LeagueWindow;
+import ui.main_ui.LeagueWindow;
 
 public class app {
     public static void main(String[] args) {

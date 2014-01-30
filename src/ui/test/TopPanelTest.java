@@ -2,7 +2,7 @@ package ui.test;
 
 import org.junit.Before;
 import org.junit.Test;
-import ui.TopPanel;
+import ui.main_ui.TopPanel;
 
 import javax.swing.*;
 
