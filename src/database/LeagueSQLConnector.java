@@ -15,7 +15,9 @@ public class LeagueSQLConnector {
     private Connection connection = null;
     private Statement st = null;
     private ResultSet res = null;
+    public ArrayList<Team> bettingList = new ArrayList<Team>();
     public ArrayList<Team> teamList = new ArrayList<Team>();
+
 
     public LeagueSQLConnector(String tableName){
 
@@ -45,6 +47,8 @@ public class LeagueSQLConnector {
                     "ORDER BY Points DESC, Goal_Difference DESC;");
             while(res.next()){
                 teamList.add(new Team(res.getString("Team_Name"), res.getInt("Goal_Difference"),
+                        res.getInt("Points"), res.getInt("Games_Played")));
+                bettingList.add(new Team(res.getString("Team_Name"), res.getInt("Goal_Difference"),
                         res.getInt("Points"), res.getInt("Games_Played")));
             }
 

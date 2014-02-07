@@ -15,7 +15,7 @@ public class TopPanel extends JPanel{
     public String newValue;
 
     public TopPanel() {
-        leagues = new String[] {"Please Select a League", "Premier League Current",
+        leagues = new String[] {"Please Select a League", "Premier League Current", "Premier League Half Way Point",
                 "Premier League, 08/05/2012", "Premier League, 13/05/2012"};
         leagueMenu = new JComboBox(leagues);
 

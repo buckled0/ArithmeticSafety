@@ -17,6 +17,10 @@ public class LeagueVerdict {
             tableName = "`test`.`Premier_League`";
             leagueVerdictConnector(tableName);
         }
+        if(tableName == "Premier League Half Way Point") {
+            tableName = "`test`.`Premier_League_Half_Point`";
+            leagueVerdictConnector(tableName);
+        }
         if(tableName == "Premier League, 08/05/2012") {
             tableName = "`test`.`Premier_League_May_8_2012`";
             leagueVerdictConnector(tableName);
