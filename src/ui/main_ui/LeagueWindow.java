@@ -1,6 +1,6 @@
 package ui.main_ui;
 
-import domain.LeagueVerdict;
+import domain.TeamVerdict;
 import ui.betting_ui.BettingWindow;
 import ui.custom_ui.CustomLeagueWindow;
 
@@ -35,7 +35,7 @@ public class LeagueWindow extends JFrame {
         topPanel.onCalculate(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                LeagueVerdict leagueVerdict = new LeagueVerdict(topPanel.getSelectedValue());
+                TeamVerdict leagueVerdict = new TeamVerdict(topPanel.getSelectedValue());
                 leagueTable.populateTable(leagueVerdict.getTeamList(), leagueVerdict.getVerdictArray());
                 if(topPanel.getSelectedValue() == "Premier League Current"){
                     int bottomDifference = leagueVerdict.getBottomDifference();

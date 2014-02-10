@@ -38,7 +38,7 @@ public class LeagueTableTest {
 
     @Test
     public void shouldBeCorrectSize(){
-        assertEquals("LeagueVerdict Table Size", leagueTable.INITIAL_SIZE, leagueTable.getSize());
+        assertEquals("TeamVerdict Table Size", leagueTable.INITIAL_SIZE, leagueTable.getSize());
     }
 
     @Test

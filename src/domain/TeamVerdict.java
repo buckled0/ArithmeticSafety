@@ -4,14 +4,14 @@ import database.LeagueSQLConnector;
 
 import java.util.ArrayList;
 
-public class LeagueVerdict {
+public class TeamVerdict {
 
     public ArrayList<Team> teamList;
     public ArrayList<TeamStatus> verdictArray = new ArrayList<TeamStatus>();
     private LeagueSQLConnector leagueSQLConnector;
     private String tableName;
 
-    public LeagueVerdict(String selectedValue) {
+    public TeamVerdict(String selectedValue) {
         this.tableName = selectedValue;
         if(tableName == "Premier League Current") {
             tableName = "`test`.`Premier_League`";
@@ -53,7 +53,7 @@ public class LeagueVerdict {
 
     }
 
-    private void startOfSeason() {
+    public void startOfSeason() {
         for(int i = 0; i < 20; i++)
             verdictArray.add(i, TeamStatus.startOfSeason);
     }
