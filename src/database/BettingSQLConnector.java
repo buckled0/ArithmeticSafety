@@ -42,9 +42,7 @@ public class BettingSQLConnector {
             st = connection.createStatement();
             res = st.executeQuery("select * from test.Premier_League ORDER BY Points DESC, Goal_Difference DESC;");
             while(res.next()){
-                bettingList.add(new Betting(res.getString("Team_Name"), res.getInt("Last_6_games"),
-                        res.getInt("Home_Wins"), res.getInt("Home_Loses"),
-                        res.getInt("Away_Wins"), res.getInt("Away_Loses")));
+                bettingList.add(new Betting(res.getString("Team_Name"), res.getInt("Last_6_games")));
             }
 
         } catch (SQLException e) {

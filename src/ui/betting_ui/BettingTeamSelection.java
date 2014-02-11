@@ -6,17 +6,18 @@ import javax.swing.*;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
+import java.util.Arrays;
 
 public class BettingTeamSelection extends JPanel {
-    public JComboBox homeTeam;
-    public JComboBox awayTeam;
-    public JButton calculateOddsButton;
-    public JTextField homeTeamOdds;
-    public JTextField drawingOdds;
-    public JTextField awayTeamOdds;
-    public JTextField homeOddsValue;
-    public JTextField drawingOddsValue;
-    public JTextField awayOddsValue;
+    public final JComboBox homeTeam;
+    public final JComboBox awayTeam;
+    public final JButton calculateOddsButton;
+    public final JTextField homeTeamOdds;
+    public final JTextField drawingOdds;
+    public final JTextField awayTeamOdds;
+    public final JTextField homeOddsValue;
+    public final JTextField drawingOddsValue;
+    public final JTextField awayOddsValue;
     private String newHomeTeamValue;
     private String newAwayTeamValue;
     public double homeOdds;
@@ -26,16 +27,19 @@ public class BettingTeamSelection extends JPanel {
     public BettingTeamSelection(){
         TeamVerdict leagueVerdict = new TeamVerdict("Premier League Current");
 
-        String[] team1List = new String[21];
-        String[] team2List = new String[21];
+        String[] team1List = new String[20];
+        String[] team2List = new String[20];
 
-        team1List[0] = "Please select Home Team";
-        team2List[0] = "Please select Away Team";
-
-        for(int i = 1; i < 21; i++){
-            team1List[i] = leagueVerdict.getTeamList().get(i-1).getName();
-            team2List[i] = leagueVerdict.getTeamList().get(i-1).getName();
+        for(int i = 0; i < 20; i++){
+            team1List[i] = leagueVerdict.getTeamList().get(i).getName();
+            team2List[i] = leagueVerdict.getTeamList().get(i).getName();
         }
+
+        Arrays.sort(team1List);
+        Arrays.sort(team2List);
+
+        setHomeTeamValue("Arsenal");
+        setAwayTeamValue("Arsenal");
 
         homeTeam = new JComboBox(team1List);
 
@@ -54,7 +58,7 @@ public class BettingTeamSelection extends JPanel {
             @Override
             public void itemStateChanged(ItemEvent itemEvent) {
                 if (itemEvent.getStateChange() == ItemEvent.SELECTED) {
-                    setTeam2Value(itemEvent.getItem().toString());
+                    setAwayTeamValue(itemEvent.getItem().toString());
                 }
             }
         });
@@ -105,17 +109,9 @@ public class BettingTeamSelection extends JPanel {
         homeOddsValue.setText(String.valueOf(homeOdds));
     }
 
-    public double getHomeOdds(){
-        return homeOdds;
-    }
-
     public void setDrawOdds(double drawOdds){
         this.drawOdds = drawOdds;
         drawingOddsValue.setText(String.valueOf(drawOdds));
-    }
-
-    public double getDrawOdds(){
-        return drawOdds;
     }
 
     public void setAwayOdds(double awayOdds){
@@ -123,15 +119,11 @@ public class BettingTeamSelection extends JPanel {
         awayOddsValue.setText(String.valueOf(awayOdds));
     }
 
-    public double getAwayOdds(){
-        return awayOdds;
-    }
-
     private void setHomeTeamValue(String selectedTeam1){ this.newHomeTeamValue = selectedTeam1; }
 
     public String getHomeTeamValue() { return newHomeTeamValue; }
 
-    private void setTeam2Value(String selectedTeam2){ this.newAwayTeamValue = selectedTeam2; }
+    private void setAwayTeamValue(String selectedTeam2){ this.newAwayTeamValue = selectedTeam2; }
 
     public String getAwayTeamValue() { return newAwayTeamValue; }
 }

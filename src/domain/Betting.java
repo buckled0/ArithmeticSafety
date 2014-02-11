@@ -6,21 +6,15 @@ public class Betting {
 
     public String name;
     public int goalDifferenceSixGames;
-    public int homeWins;
-    public int homeLoses;
-    public int awayWins;
-    public int awayLoses;
+
     private double pastHomeWinsPercentage = 0.4622;
     private double pastAwayWinsPercentage = 0.2694;
+    public double homeTeamOdds;
+    public double awayTeamOdds;
 
-    public Betting(String name, int goalDifferenceSixGames, int homeWins,
-                   int homeLoses, int awayWins, int awayLoses) {
+    public Betting(String name, int goalDifferenceSixGames) {
         this.name = name;
         this.goalDifferenceSixGames = goalDifferenceSixGames;
-        this.homeWins = homeWins;
-        this.homeLoses = homeLoses;
-        this.awayWins = awayWins;
-        this.awayLoses = awayLoses;
     }
 
     public String getName(){
@@ -29,62 +23,34 @@ public class Betting {
     public int getGoalDifferenceSixGames(){
         return goalDifferenceSixGames;
     }
-    public int getHomeWins(){
-        return homeWins;
-    }
-    public int getHomeLoses(){
-        return homeLoses;
-    }
-    public int getAwayWins(){
-        return awayWins;
-    }
-    public int getAwayLoses(){
-        return awayLoses;
-    }
 
     public double homeOdds(Betting home, Betting away) {
-        double homeTeamOdds;
+        double dividedHomeOdds;
+        this.homeTeamOdds = 0.0156 * (home.getGoalDifferenceSixGames() - away.getGoalDifferenceSixGames()) +
+            pastHomeWinsPercentage;
 
-        if(home.getHomeWins() == 0 || home.getHomeLoses() == 0)
-            if(home.getHomeWins() > home.getHomeLoses())
-                homeTeamOdds = (1/(0.0156 * (home.getGoalDifferenceSixGames() - away.getGoalDifferenceSixGames()) +
-                        pastHomeWinsPercentage));
-            else
-                homeTeamOdds = (1/((home.getGoalDifferenceSixGames() - away.getGoalDifferenceSixGames()) +
-                        pastHomeWinsPercentage));
-
-
-        else {
-            homeTeamOdds = (1/(0.0156 * (home.getGoalDifferenceSixGames() - away.getGoalDifferenceSixGames()) +
-                    pastHomeWinsPercentage));
-        }
-
+        dividedHomeOdds = 1/homeTeamOdds;
         DecimalFormat finalHomeOdds = new DecimalFormat("#.##");
 
-        return Double.parseDouble(finalHomeOdds.format(homeTeamOdds));
+        return Double.parseDouble(finalHomeOdds.format(dividedHomeOdds));
     }
 
     public double awayOdds(Betting home, Betting away) {
-        double awayTeamOdds;
+        double dividedTeamOdds;
+        this.awayTeamOdds = 0.0003 * (Math.pow(home.getGoalDifferenceSixGames() - away.getGoalDifferenceSixGames(), 2)) -
+            (0.0127* (home.getGoalDifferenceSixGames() - away.getGoalDifferenceSixGames())) +
+            pastAwayWinsPercentage;
 
-        if(away.getAwayWins() == 0 || away.getAwayLoses() == 0){
-            if(away.getAwayWins() > away.getAwayLoses() && home.getHomeWins() > home.getHomeLoses()){
-                awayTeamOdds = 1/(0.0003 * (Math.pow(home.getGoalDifferenceSixGames() - away.getGoalDifferenceSixGames(), 2)) -
-                        (0.0127* (home.getGoalDifferenceSixGames() - away.getGoalDifferenceSixGames())) +
-                        pastAwayWinsPercentage);
-            }
-            else {
-                awayTeamOdds = 1/(0.0003 * (Math.pow(home.getGoalDifferenceSixGames() - away.getGoalDifferenceSixGames(), 2)) -
-                        (0.0127 * (home.getGoalDifferenceSixGames() - away.getGoalDifferenceSixGames())) +
-                        pastAwayWinsPercentage);
-            }
-        } else {
-            awayTeamOdds = 1/(0.0003 * (Math.pow(home.getGoalDifferenceSixGames() - away.getGoalDifferenceSixGames(), 2)) -
-                    (0.0127* (home.getGoalDifferenceSixGames() - away.getGoalDifferenceSixGames())) +
-                pastAwayWinsPercentage);
-        }
+        dividedTeamOdds = 1/awayTeamOdds;
         DecimalFormat finalAwayOdds = new DecimalFormat("#.##");
 
-        return Double.parseDouble(finalAwayOdds.format(awayTeamOdds));
+        return Double.parseDouble(finalAwayOdds.format(dividedTeamOdds));
     }
+
+    public double drawingOdds(){
+        double drawingOdds = 1 - (homeTeamOdds + awayTeamOdds) * 10;
+        DecimalFormat finalDrawOdds = new DecimalFormat("#.##");
+        return Double.parseDouble(finalDrawOdds.format(drawingOdds));
+    }
+
 }

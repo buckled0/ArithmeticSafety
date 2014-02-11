@@ -9,8 +9,8 @@ public class BettingTest {
 
     @Test
     public void shouldPassToHomeOddsMethodForSunderland(){
-        Betting home = createTeam("Sunderland", 6, 3, 7, 3, 5);
-        Betting away = createTeam("Hull", 1, 5, 3, 1, 9);
+        Betting home = createTeam("Sunderland", 6);
+        Betting away = createTeam("Hull", 1);
 
         double expected = 1.83;
 
@@ -20,8 +20,8 @@ public class BettingTest {
 
     @Test
     public void shouldPassToHomeOddsMethodForChelseaIfOneValueIsZero(){
-        Betting home = createTeam("Chelsea", 9, 10, 0, 6, 3);
-        Betting away = createTeam("Newcastle", -5, 5, 4, 6, 5);
+        Betting home = createTeam("Chelsea", 9);
+        Betting away = createTeam("Newcastle", -5);
 
         double expected = 0.41;
 
@@ -31,8 +31,8 @@ public class BettingTest {
 
     @Test
     public void shouldPassToAwayOddsMethodForHull(){
-        Betting away = createTeam("Hull", 1, 5, 3, 1, 9);
-        Betting home = createTeam("Sunderland", 6, 3, 7, 3, 5);
+        Betting away = createTeam("Hull", 1);
+        Betting home = createTeam("Sunderland", 6);
 
         double expected = 3.30;
 
@@ -41,8 +41,8 @@ public class BettingTest {
 
     @Test
     public void shouldPassToAwayOddsMethodForChelseaAndNewcastleIfAwayValueIsZero(){
-        Betting away = createTeam("Chelsea", 9, 10, 0, 6, 3);
-        Betting home = createTeam("Newcastle", -5, 5, 4, 6, 0);
+        Betting away = createTeam("Chelsea", 9);
+        Betting home = createTeam("Newcastle", -5);
 
         double expected = 0.55;
 
@@ -52,8 +52,8 @@ public class BettingTest {
 
     @Test
     public void shouldPassToAwayOddsMethodForChelseaAndNewcastleIfHomeValueIsZero(){
-        Betting home = createTeam("Chelsea", 9, 10, 0, 6, 3);
-        Betting away = createTeam("Newcastle", -5, 5, 4, 6, 0);
+        Betting home = createTeam("Chelsea", 9);
+        Betting away = createTeam("Newcastle", -5);
 
         double expected = 0.48;
 
@@ -61,9 +61,8 @@ public class BettingTest {
 
     }
 
-    private Betting createTeam(String name, int goalDifferenceSixGames, int homeWins,
-                                      int homeLoses, int awayWins, int awayLoses) {
-        return new Betting(name, goalDifferenceSixGames, homeWins, homeLoses, awayWins, awayLoses);
+    private Betting createTeam(String name, int goalDifferenceSixGames) {
+        return new Betting(name, goalDifferenceSixGames);
     }
 
 }

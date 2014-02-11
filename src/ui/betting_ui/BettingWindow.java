@@ -6,7 +6,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.text.DecimalFormat;
 
 public class BettingWindow extends JFrame {
     public static final String TITLE = "Odds On Betting";
@@ -36,19 +35,19 @@ public class BettingWindow extends JFrame {
             public void actionPerformed(ActionEvent actionEvent) {
                 String homeTeam = bettingTeamSelection.getHomeTeamValue();
                 String awayTeam = bettingTeamSelection.getAwayTeamValue();
-                bettingVerdict = new BettingVerdict(homeTeam, awayTeam);
-                double homeTeamOdds = bettingVerdict.getHomeOdds();
-                double awayTeamOdds = bettingVerdict.getAwayOdds();
-                double drawingOdds = 1 - ((homeTeamOdds/10) + (awayTeamOdds/10));
-                DecimalFormat finalDrawOdds = new DecimalFormat("#.##");
 
-                bettingTeamSelection.setHomeOdds(homeTeamOdds);
-                bettingTeamSelection.setAwayOdds(awayTeamOdds);
-                bettingTeamSelection.setDrawOdds(Double.parseDouble(finalDrawOdds.format(drawingOdds)));
+                if(homeTeam.equals(awayTeam)){
+                    JOptionPane.showMessageDialog(null, "You have selected the same Team, please select another");
+                } else {
+                    bettingVerdict = new BettingVerdict(homeTeam, awayTeam);
+                    double homeTeamOdds = bettingVerdict.getHomeOdds();
+                    double awayTeamOdds = bettingVerdict.getAwayOdds();
+                    double drawingOdds = bettingVerdict.getDrawingOdds();
 
-
-                System.out.println(bettingTeamSelection.getHomeOdds());
-                System.out.println(bettingTeamSelection.getAwayOdds());
+                    bettingTeamSelection.setHomeOdds(homeTeamOdds);
+                    bettingTeamSelection.setAwayOdds(awayTeamOdds);
+                    bettingTeamSelection.setDrawOdds(drawingOdds);
+                }
             }
         });
 

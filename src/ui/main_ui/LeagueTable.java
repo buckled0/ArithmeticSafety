@@ -93,7 +93,7 @@ public class LeagueTable extends JTable {
     }
 
     public void populateRelegationCell(int bottomDifference){
-        model.setValueAt("Team needs " + bottomDifference + " to overtake the team above", 19, 4);
+        model.setValueAt("Team needs " + bottomDifference + " points to overtake the team above", 19, 4);
     }
 
 }

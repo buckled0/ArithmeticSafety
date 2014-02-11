@@ -9,6 +9,7 @@ public class BettingVerdict {
     public Betting away;
     public double homeOdds;
     public double awayOdds;
+    public double drawingOdds;
     public ArrayList<Double> bettingVerdictList = new ArrayList<Double>();
 
     public BettingVerdict(String homeTeam, String awayTeam){
@@ -23,6 +24,7 @@ public class BettingVerdict {
 
         homeOdds = home.homeOdds(home, away);
         awayOdds = away.awayOdds(home, away);
+        drawingOdds = home.drawingOdds();
 
     }
 
@@ -32,6 +34,10 @@ public class BettingVerdict {
 
     public double getAwayOdds(){
         return awayOdds;
+    }
+
+    public double getDrawingOdds(){
+        return drawingOdds;
     }
 
 }

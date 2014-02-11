@@ -10,7 +10,6 @@ public class TopPanel extends JPanel{
     public String[] leagues;
     public JComboBox leagueMenu;
     public JButton calculate;
-    public JButton customLeagueButton;
     public JButton bettingButton;
     public String newValue;
 
@@ -28,22 +27,16 @@ public class TopPanel extends JPanel{
         });
 
         calculate = new JButton("Calculate Safety");
-        customLeagueButton = new JButton("Create Custom League");
         bettingButton = new JButton("Odds On Betting");
 
         add(leagueMenu);
         add(calculate);
-        add(customLeagueButton);
         add(bettingButton);
 
     }
 
     public void onCalculate(ActionListener listener){
         calculate.addActionListener(listener);
-    }
-
-    public void onCustomLeagueButton(ActionListener listener){
-        customLeagueButton.addActionListener(listener);
     }
 
     public void onBettingButton(ActionListener listener){
