@@ -25,8 +25,8 @@ public class CustomLeagueWindow extends JFrame {
         setResizable(false);
         setLocation(INITIAL_LOCATION);
 
-        getContentPane().add(BorderLayout.SOUTH, setupCustomBottomPanel(Integer.parseInt(teamAmount)));
         getContentPane().add(BorderLayout.CENTER, customLeagueTable = new CustomLeagueTable(teamAmount));
+        getContentPane().add(BorderLayout.SOUTH, setupCustomBottomPanel(Integer.parseInt(teamAmount)));
 
         setVisible(true);
     }
@@ -55,7 +55,8 @@ public class CustomLeagueWindow extends JFrame {
                     customLeagueTable.populateTable(teamList, verdictList);
                     int bottom = teamList.size()-1;
                     int secondOffBottom = teamList.size()-2;
-                    int bottomGoalDifference = teamList.get(secondOffBottom).getPoints() - teamList.get(bottom).getPoints();
+                    int bottomGoalDifference = teamList.get(secondOffBottom).getPoints() -
+                            teamList.get(bottom).getPoints() + 1;
                     customLeagueTable.populateRelegationCell(bottomGoalDifference, teamAmount);
                 }
             }

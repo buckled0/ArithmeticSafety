@@ -47,9 +47,8 @@ public class LeagueSQLConnector {
                     "ORDER BY Points DESC, Goal_Difference DESC;");
             while(res.next()){
                 teamList.add(new Team(res.getString("Team_Name"), res.getInt("Goal_Difference"),
-                        res.getInt("Points"), res.getInt("Games_Played")));
-                bettingList.add(new Team(res.getString("Team_Name"), res.getInt("Goal_Difference"),
-                        res.getInt("Points"), res.getInt("Games_Played")));
+                        res.getInt("Points"), res.getInt("Wins"), res.getInt("Loses"), res.getInt("Draws"),
+                        res.getInt("Games_Played")));
             }
 
         } catch (SQLException e) {

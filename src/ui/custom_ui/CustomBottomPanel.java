@@ -22,6 +22,7 @@ public class CustomBottomPanel extends JPanel {
         add(instructions);
         add(calculateButton);
         add(closeButton);
+
     }
 
     public void onCalculate(ActionListener listener) {
@@ -30,6 +31,10 @@ public class CustomBottomPanel extends JPanel {
 
     public void onCloseButton(ActionListener listener){
         closeButton.addActionListener(listener);
+    }
+
+    public void teamDefaultInstructions(){
+        instructions.setText("Please start entering your League data");
     }
 
     public void teamNameInstructions(){

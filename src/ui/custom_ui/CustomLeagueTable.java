@@ -24,7 +24,8 @@ public class CustomLeagueTable extends JTable {
             public boolean isCellEditable(int row, int column) {
                 return true;
             }};
-        model.setColumnIdentifiers(new String[]{"Team Name", "Points", "Goal Diff", "Played", "League Verdict"});
+        model.setColumnIdentifiers(new String[]{"Team Name", "Points", "Goal Diff", "Wins", "Loses",
+                "Draws", "Played", "League Verdict"});
         model.setRowCount(Integer.parseInt(teamAmount));
 
         JScrollPane pane = new JScrollPane(table, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED,
@@ -42,8 +43,6 @@ public class CustomLeagueTable extends JTable {
         colVerdict.setPreferredWidth(290);
 
         add(pane);
-
-
     }
 
     public ArrayList<Team> getValuesInTable() {
@@ -53,12 +52,16 @@ public class CustomLeagueTable extends JTable {
             String teamName = String.valueOf(table.getValueAt(i, 0));
             int teamPoints = Integer.parseInt(String.valueOf(table.getValueAt(i, 1)));
             int teamGD = Integer.parseInt(String.valueOf(table.getValueAt(i, 2)));
+            int wins = Integer.parseInt(String.valueOf(table.getValueAt(i, 2)));
+            int loses = Integer.parseInt(String.valueOf(table.getValueAt(i, 2)));
+            int draws = Integer.parseInt(String.valueOf(table.getValueAt(i, 2)));
             int gamesPlayed = Integer.parseInt(String.valueOf(table.getValueAt(i, 3)));
-            Team team = new Team(teamName, teamPoints, teamGD, gamesPlayed);
+            Team team = new Team(teamName, teamPoints, teamGD, wins, draws, loses, gamesPlayed);
             teamList.add(i, team);
         }
         return teamList;
     }
+
 
     public void populateTable(ArrayList<Team> teamList, ArrayList<TeamStatus> verdictArray) {
 
@@ -97,4 +100,5 @@ public class CustomLeagueTable extends JTable {
     public void populateRelegationCell(int bottomDifference, int teamAmount){
         model.setValueAt("Team needs " + bottomDifference + " to overtake the team above", teamAmount - 1, 4);
     }
+
 }

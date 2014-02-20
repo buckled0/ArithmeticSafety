@@ -11,7 +11,7 @@ import java.awt.event.ActionListener;
 
 public class LeagueWindow extends JFrame {
     public static final String TITLE = "Arithmetic Football";
-    public static final Dimension INITIAL_SIZE = new Dimension(1050, 450);
+    public static final Dimension INITIAL_SIZE = new Dimension(1250, 450);
     public static final Point INITIAL_LOCATION = new Point(150, 22);
     public LeagueTable leagueTable;
 
@@ -37,7 +37,7 @@ public class LeagueWindow extends JFrame {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 TeamVerdict leagueVerdict = new TeamVerdict(topPanel.getSelectedValue());
-                leagueTable.populateTable(leagueVerdict.getTeamList(), leagueVerdict.getVerdictArray());
+                leagueTable.populateTable(leagueVerdict.getTeamList(), leagueVerdict.getVerdictArray(), leagueVerdict.getGamesRemaining());
                 if(leagueVerdict.getTeamList().get(1).getGamesPlayed() < 30){
                     int bottomDifference = leagueVerdict.getBottomDifference();
                     leagueTable.populateRelegationCell(bottomDifference);

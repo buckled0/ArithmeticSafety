@@ -64,13 +64,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CustomLeagueTable.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ui/custom_ui/CustomLeagueTable.java">
+      <file leaf-file-name="definitiveSafetyVerdictCheckTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/definitiveSafetyVerdictCheckTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="8" selection-start="1435" selection-end="1435" vertical-scroll-proportion="0.0" vertical-offset="1111" max-vertical-offset="1485">
-              <folding>
-                <element signature="e#436#442#0" expanded="true" />
-              </folding>
+            <state line="67" column="28" selection-start="2943" selection-end="2943" vertical-scroll-proportion="0.0" vertical-offset="824" max-vertical-offset="1215">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Team.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/domain/Team.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="99" column="17" selection-start="2929" selection-end="2929" vertical-scroll-proportion="0.80213904" vertical-offset="975" max-vertical-offset="1590">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -78,28 +85,25 @@
       <file leaf-file-name="LeagueTable.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ui/main_ui/LeagueTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="69" selection-start="4259" selection-end="4259" vertical-scroll-proportion="0.0" vertical-offset="1096" max-vertical-offset="1470">
+            <state line="98" column="5" selection-start="4736" selection-end="4736" vertical-scroll-proportion="0.0" vertical-offset="1470" max-vertical-offset="1665">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomLeagueWindow.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ui/custom_ui/CustomLeagueWindow.java">
+      <file leaf-file-name="LeagueWindow.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ui/main_ui/LeagueWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="1000" selection-end="1000" vertical-scroll-proportion="-0.6204986" vertical-offset="539" max-vertical-offset="960">
-              <folding>
-                <element signature="e#596#602#0" expanded="true" />
-                <element signature="e#666#678#0" expanded="true" />
-              </folding>
+            <state line="39" column="104" selection-start="1488" selection-end="1488" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="1455">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomBottomPanel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ui/custom_ui/CustomBottomPanel.java">
+      <file leaf-file-name="TeamVerdict.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/domain/TeamVerdict.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="5" selection-start="1336" selection-end="1336" vertical-scroll-proportion="0.0" vertical-offset="451" max-vertical-offset="825">
+            <state line="60" column="78" selection-start="2467" selection-end="2467" vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="1890">
               <folding />
             </state>
           </provider>
@@ -122,7 +126,6 @@
         <option value="$PROJECT_DIR$/src/database/LeagueRepository.java" />
         <option value="$PROJECT_DIR$/src/test/FakeLeague.java" />
         <option value="$PROJECT_DIR$/src/test/VerdictTest.java" />
-        <option value="$PROJECT_DIR$/src/test/TeamTest.java" />
         <option value="$PROJECT_DIR$/src/ui/BottomPanel.java" />
         <option value="$PROJECT_DIR$/src/ui/test/LeagueWindowTest.java" />
         <option value="$PROJECT_DIR$/src/app.java" />
@@ -134,7 +137,6 @@
         <option value="$PROJECT_DIR$/src/ui/CustomTopPanel.java" />
         <option value="$PROJECT_DIR$/src/ui/CustomLeagueTable.java" />
         <option value="$PROJECT_DIR$/src/ui/CustomLeagueWindow.java" />
-        <option value="$PROJECT_DIR$/src/domain/Team.java" />
         <option value="$PROJECT_DIR$/src/ui/LeagueTable.java" />
         <option value="$PROJECT_DIR$/src/domain/VerdictDictionary.java" />
         <option value="$PROJECT_DIR$/src/ui/TopPanel.java" />
@@ -143,18 +145,14 @@
         <option value="$PROJECT_DIR$/src/ui/betting_ui/BettingPage.java" />
         <option value="$PROJECT_DIR$/src/ui/betting_ui/BettingBottomPanel.java" />
         <option value="$PROJECT_DIR$/src/ui/betting_ui/BettingTopPanel.java" />
-        <option value="$PROJECT_DIR$/src/database/LeagueSQLConnector.java" />
         <option value="$PROJECT_DIR$/src/ui/betting_ui/BettingEastPanel.java" />
         <option value="$PROJECT_DIR$/src/domain/LeagueVerdict.java" />
-        <option value="$PROJECT_DIR$/src/domain/TeamVerdict.java" />
-        <option value="$PROJECT_DIR$/src/ui/main_ui/TopPanel.java" />
         <option value="$PROJECT_DIR$/src/ui/betting_ui/BettingNorthPanel.java" />
         <option value="$PROJECT_DIR$/src/database/BettingSQLConnector.java" />
         <option value="$PROJECT_DIR$/src/test/BettingTest.java" />
         <option value="$PROJECT_DIR$/src/domain/BettingVerdict.java" />
         <option value="$PROJECT_DIR$/src/domain/Betting.java" />
         <option value="$PROJECT_DIR$/src/ui/main_ui/EastPanel.java" />
-        <option value="$PROJECT_DIR$/src/ui/main_ui/LeagueWindow.java" />
         <option value="$PROJECT_DIR$/src/ui/betting_ui/BettingTeamSelection.java" />
         <option value="$PROJECT_DIR$/src/ui/betting_ui/errorMessage.java" />
         <option value="$PROJECT_DIR$/src/ui/betting_ui/BettingWindow.java" />
@@ -162,13 +160,20 @@
         <option value="$PROJECT_DIR$/src/ui/custom_ui/CustomEastPanel.java" />
         <option value="$PROJECT_DIR$/src/ui/custom_ui/CustomBottomPanel.java" />
         <option value="$PROJECT_DIR$/src/ui/custom_ui/CustomLeagueWindow.java" />
+        <option value="$PROJECT_DIR$/src/domain/LastLegOfTheSeason.java" />
         <option value="$PROJECT_DIR$/src/ui/custom_ui/CustomLeagueTable.java" />
+        <option value="$PROJECT_DIR$/src/test/TeamTest.java" />
+        <option value="$PROJECT_DIR$/src/ui/main_ui/TopPanel.java" />
+        <option value="$PROJECT_DIR$/src/database/LeagueSQLConnector.java" />
+        <option value="$PROJECT_DIR$/src/test/definitiveSafetyVerdictCheckTest.java" />
         <option value="$PROJECT_DIR$/src/ui/main_ui/LeagueTable.java" />
+        <option value="$PROJECT_DIR$/src/ui/main_ui/LeagueWindow.java" />
+        <option value="$PROJECT_DIR$/src/domain/TeamVerdict.java" />
+        <option value="$PROJECT_DIR$/src/domain/Team.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
     <option name="y" value="22" />
     <option name="width" value="1280" />
     <option name="height" value="712" />
@@ -281,7 +286,43 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="custom_ui" />
+              <option name="myItemId" value="main_ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ArithmeticSafety" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ArithmeticSafety" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ArithmeticSafety" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ArithmeticSafety" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -345,28 +386,6 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="VerdictTest" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="ArithmeticSafety" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.VerdictTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="false" name="TeamTest" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="ArithmeticSafety" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -417,6 +436,28 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.BettingTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="definitiveSafetyVerdictCheckTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ArithmeticSafety" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.definitiveSafetyVerdictCheckTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -562,18 +603,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.app" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.VerdictTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TeamTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.EndOfSeasonTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.BettingTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TeamTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.EndOfSeasonTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.BettingTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.definitiveSafetyVerdictCheckTest" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.app" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.BettingTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TeamTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.EndOfSeasonTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.VerdictTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.definitiveSafetyVerdictCheckTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.BettingTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TeamTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.EndOfSeasonTest" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -613,8 +654,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="22" width="1280" height="712" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="22" width="1280" height="712" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -624,7 +665,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3951613" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24798061" sideWeight="0.45273632" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37741935" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -632,8 +673,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24798061" sideWeight="0.6030405" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3516129" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24798061" sideWeight="0.54477614" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3516129" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -692,9 +733,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/domain/Team.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="5" selection-start="1369" selection-end="1369" vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="885">
-          <folding />
-        </state>
+        <state line="50" column="5" selection-start="1369" selection-end="1369" vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="885" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/main_ui/LeagueWindow.java">
@@ -704,9 +743,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/domain/TeamStatus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="19" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="195">
-          <folding />
-        </state>
+        <state line="5" column="19" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="195" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/main_ui/LeagueTable.java">
@@ -716,16 +753,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/domain/TeamVerdict.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="20" selection-start="2370" selection-end="2370" vertical-scroll-proportion="0.0" vertical-offset="990" max-vertical-offset="1470">
-          <folding />
-        </state>
+        <state line="66" column="20" selection-start="2370" selection-end="2370" vertical-scroll-proportion="0.0" vertical-offset="990" max-vertical-offset="1470" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/domain/Team.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="5" selection-start="1369" selection-end="1369" vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="885">
-          <folding />
-        </state>
+        <state line="50" column="5" selection-start="1369" selection-end="1369" vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="885" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/main_ui/LeagueWindow.java">
@@ -735,9 +768,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/domain/TeamStatus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="19" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="195">
-          <folding />
-        </state>
+        <state line="5" column="19" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="195" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/main_ui/LeagueTable.java">
@@ -747,9 +778,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/domain/TeamVerdict.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="48" selection-start="472" selection-end="472" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="915">
-          <folding />
-        </state>
+        <state line="16" column="48" selection-start="472" selection-end="472" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="915" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/main_ui/TopPanel.java">
@@ -764,9 +793,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/domain/TeamVerdict.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="61" selection-start="617" selection-end="617" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="870">
-          <folding />
-        </state>
+        <state line="20" column="61" selection-start="617" selection-end="617" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="870" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/main_ui/TopPanel.java">
@@ -781,16 +808,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/domain/TeamVerdict.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="42" selection-start="1267" selection-end="1267" vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="765">
-          <folding />
-        </state>
+        <state line="45" column="42" selection-start="1267" selection-end="1267" vertical-scroll-proportion="0.0" vertical-offset="675" max-vertical-offset="765" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/domain/Team.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="91" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="885">
-          <folding />
-        </state>
+        <state line="44" column="91" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="885" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/main_ui/TopPanel.java">
@@ -805,16 +828,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/domain/Team.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="26" selection-start="144" selection-end="144" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="8" column="26" selection-start="144" selection-end="144" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/domain/TeamStatus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="26" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <folding />
-        </state>
+        <state line="6" column="26" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/javax/swing/table/DefaultTableModel.class">
@@ -842,21 +861,9 @@
         <state line="17" column="30" selection-start="367" selection-end="367" vertical-scroll-proportion="0.33074936" vertical-offset="7" max-vertical-offset="1020" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="8" selection-start="97" selection-end="246" vertical-scroll-proportion="0.16085792" vertical-offset="0" max-vertical-offset="373">
-          <folding>
-            <element signature="e#144#252#0" expanded="false" />
-            <element signature="e#241#242#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/domain/VerdictDictionary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="1518" selection-end="1518" vertical-scroll-proportion="0.63131315" vertical-offset="0" max-vertical-offset="594">
-          <folding />
-        </state>
+        <state line="25" column="0" selection-start="1518" selection-end="1518" vertical-scroll-proportion="0.63131315" vertical-offset="0" max-vertical-offset="594" />
       </provider>
     </entry>
     <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/awt/event/ActionListener.class">
@@ -864,44 +871,73 @@
         <state line="7" column="9" selection-start="219" selection-end="219" vertical-scroll-proportion="0.24128686" vertical-offset="0" max-vertical-offset="373" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/TeamTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="31" selection-start="2650" selection-end="2650" vertical-scroll-proportion="0.0" vertical-offset="694" max-vertical-offset="1275">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/LeagueSQLConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="0" selection-start="2114" selection-end="2114" vertical-scroll-proportion="2.6470587" vertical-offset="30" max-vertical-offset="1110">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/main_ui/BottomPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="4" selection-start="164" selection-end="503" vertical-scroll-proportion="0.23796791" vertical-offset="1" max-vertical-offset="375">
-          <folding />
-        </state>
+        <state line="8" column="4" selection-start="164" selection-end="503" vertical-scroll-proportion="0.23796791" vertical-offset="1" max-vertical-offset="375" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/betting_ui/BettingNorthPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="16" selection-start="111" selection-end="111" vertical-scroll-proportion="0.20053476" vertical-offset="0" max-vertical-offset="374">
-          <folding />
-        </state>
+        <state line="5" column="16" selection-start="111" selection-end="111" vertical-scroll-proportion="0.20053476" vertical-offset="0" max-vertical-offset="374" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/betting_ui/BettingSouthPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="98" selection-end="98" vertical-scroll-proportion="0.16042781" vertical-offset="0" max-vertical-offset="375">
-          <folding />
-        </state>
+        <state line="5" column="13" selection-start="98" selection-end="98" vertical-scroll-proportion="0.16042781" vertical-offset="0" max-vertical-offset="375" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/BettingTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="49" selection-start="260" selection-end="260" vertical-scroll-proportion="0.34188035" vertical-offset="0" max-vertical-offset="1065">
+        <state line="11" column="49" selection-start="260" selection-end="260" vertical-scroll-proportion="0.34188035" vertical-offset="0" max-vertical-offset="1065" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/betting_ui/BettingWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="111" selection-start="1551" selection-end="1551" vertical-scroll-proportion="1.0802139" vertical-offset="76" max-vertical-offset="960" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/Betting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="67" selection-start="1665" selection-end="1665" vertical-scroll-proportion="1.3636364" vertical-offset="180" max-vertical-offset="870" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/betting_ui/BettingTeamSelection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="110" column="0" selection-start="3513" selection-end="3513" vertical-scroll-proportion="2.1657753" vertical-offset="660" max-vertical-offset="1845" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/TeamStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="55" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/main_ui/EastPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="38" selection-start="479" selection-end="479" vertical-scroll-proportion="0.15151516" vertical-offset="90" max-vertical-offset="750">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="229" selection-end="229" vertical-scroll-proportion="0.17736487" vertical-offset="0" max-vertical-offset="592" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/custom_ui/CustomLeagueWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="76" selection-start="1292" selection-end="1292" vertical-scroll-proportion="0.04040404" vertical-offset="381" max-vertical-offset="975">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/custom_ui/CustomBottomPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="62" selection-start="1186" selection-end="1186" vertical-scroll-proportion="0.6212121" vertical-offset="321" max-vertical-offset="915" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/BettingVerdict.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="27" selection-start="1235" selection-end="1235" vertical-scroll-proportion="0.77272725" vertical-offset="21" max-vertical-offset="615">
           <folding />
         </state>
       </provider>
@@ -909,112 +945,68 @@
     <entry file="file://$PROJECT_DIR$/src/database/BettingSQLConnector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="100" selection-start="1278" selection-end="1278" vertical-scroll-proportion="0.45989305" vertical-offset="443" max-vertical-offset="1035">
-          <folding>
-            <element signature="e#522#531#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/Team.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="367" selection-end="367" vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="765">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/main_ui/EastPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="38" selection-start="479" selection-end="479" vertical-scroll-proportion="0.24064171" vertical-offset="90" max-vertical-offset="750">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/TeamVerdict.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="1089" selection-end="1089" vertical-scroll-proportion="0.0" vertical-offset="1576" max-vertical-offset="1950">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/main_ui/TopPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="57" selection-start="1021" selection-end="1021" vertical-scroll-proportion="0.0" vertical-offset="146" max-vertical-offset="765">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/BettingVerdict.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="27" selection-start="1235" selection-end="1235" vertical-scroll-proportion="0.0" vertical-offset="61" max-vertical-offset="615">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/betting_ui/BettingWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="111" selection-start="1551" selection-end="1551" vertical-scroll-proportion="1.0802139" vertical-offset="76" max-vertical-offset="960">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/Betting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="67" selection-start="1665" selection-end="1665" vertical-scroll-proportion="1.3636364" vertical-offset="180" max-vertical-offset="870">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/betting_ui/BettingTeamSelection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="0" selection-start="3513" selection-end="3513" vertical-scroll-proportion="2.1657753" vertical-offset="660" max-vertical-offset="1845">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/domain/TeamStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="55" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/main_ui/LeagueWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="1" selection-start="3190" selection-end="3190" vertical-scroll-proportion="2.3663101" vertical-offset="105" max-vertical-offset="1080">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/custom_ui/CustomBottomPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="5" selection-start="1336" selection-end="1336" vertical-scroll-proportion="0.0" vertical-offset="451" max-vertical-offset="825">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/custom_ui/CustomLeagueTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="8" selection-start="1435" selection-end="1435" vertical-scroll-proportion="0.0" vertical-offset="1111" max-vertical-offset="1485">
-          <folding>
-            <element signature="e#436#442#0" expanded="true" />
-          </folding>
+        <state line="58" column="81" selection-start="2294" selection-end="2294" vertical-scroll-proportion="-0.370826" vertical-offset="976" max-vertical-offset="1545" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/TeamTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="5" selection-start="2794" selection-end="2794" vertical-scroll-proportion="0.58448756" vertical-offset="779" max-vertical-offset="1290">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/database/LeagueSQLConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="24" selection-start="1527" selection-end="1527" vertical-scroll-proportion="0.44117647" vertical-offset="540" max-vertical-offset="1095">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/main_ui/TopPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="16" selection-start="502" selection-end="530" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/definitiveSafetyVerdictCheckTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="28" selection-start="2943" selection-end="2943" vertical-scroll-proportion="0.0" vertical-offset="824" max-vertical-offset="1215">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/main_ui/LeagueWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="104" selection-start="1488" selection-end="1488" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1080">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/main_ui/LeagueTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="69" selection-start="4259" selection-end="4259" vertical-scroll-proportion="0.0" vertical-offset="1096" max-vertical-offset="1470">
+        <state line="98" column="5" selection-start="4736" selection-end="4736" vertical-scroll-proportion="0.0" vertical-offset="766" max-vertical-offset="1560">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/custom_ui/CustomLeagueWindow.java">
+    <entry file="file://$PROJECT_DIR$/src/domain/TeamVerdict.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="1000" selection-end="1000" vertical-scroll-proportion="-0.6204986" vertical-offset="539" max-vertical-offset="960">
-          <folding>
-            <element signature="e#596#602#0" expanded="true" />
-            <element signature="e#666#678#0" expanded="true" />
-          </folding>
+        <state line="60" column="78" selection-start="2467" selection-end="2467" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1830">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/domain/Team.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="17" selection-start="2929" selection-end="2929" vertical-scroll-proportion="0.80213904" vertical-offset="975" max-vertical-offset="1590">
+          <folding />
         </state>
       </provider>
     </entry>
